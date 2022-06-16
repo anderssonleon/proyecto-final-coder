@@ -284,7 +284,6 @@ body{
         display: none;
     }
     .nav__responsive{
-        margin: -30px;
         display: block;
         position: relative;
         background-color: #f08c3bda;
