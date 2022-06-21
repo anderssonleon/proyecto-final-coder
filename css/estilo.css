@@ -48,6 +48,29 @@ body{
     margin-left:4vw;
 }
 
+.ul__models{
+    position: absolute;
+    list-style-type: none;
+    min-width: 150px;
+    height:50%;
+    top: -100%;
+    background: #000000d5; 
+    transition: .9s;
+}
+
+.ul__models li{
+    margin-top: 40px;
+}
+.models__container:hover > .ul__models{
+    top: 30px;
+
+
+}
+.ul__models a:hover{
+    color: #f75f07;
+}
+
+
 .nav__ul-li{
 	color: #fff;    
 }
@@ -239,13 +262,14 @@ body{
 
 .content__footer_div1{
     display: flex;
-    flex-direction: column;
-    justify-content:start;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content__footer_div1 i {
-    font-size: 2vw;
+    font-size: 4vw;
     color: #fff;
+    margin: 10px;
 
 }
 .content__footer_div1 i:hover{
@@ -314,6 +338,7 @@ body{
         color: #000;
 
     }
+
      
     .container__welcome{
         display: flex;
@@ -346,43 +371,6 @@ body{
 
 }
 /*desde aca modelos.html*/
-main{
-  background-color: #a56402d7;
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 200px 200px 200px 200px ;
-  grid-gap:2em;
-
-}
-.imag__modelos{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-.items-a {
-    grid-row: 1 / 2;
-    grid-column: 1 / 3;
-  }
-   
-  .items-b {
-    grid-row: 2 / 3;
-    grid-column: 1 / 3;
-  }
-   
-  .items-c {
-   grid-column: 1 / 3;
-   grid-row: 3 / 5;
-  }
-   
-  .items-d {
-    grid-column: 3 / 5;
-   grid-row: 1 / 5;
-   
-  }
 
 
 /* desde aca html.suscribete*/
@@ -457,6 +445,7 @@ main{
 }
 .container__gird{
     display: grid;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr ;
